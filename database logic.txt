@@ -1,0 +1,53 @@
+USERS
+- id
+- email
+- password
+- reset_password
+- date_joined
+- date_subscribed (date): to be set as Null for all new users till they subscribe
+- duration_subscription (int): In days. to be set as 0 for all new users till they subscribe.
+if (date_subscribed + duration_subscribed < currentDate)
+  echo "Subscription expired";
+    $Subscription = Null;
+
+MEDIA
+How it will be stored
+- Parent folder saved as yyyy
+- Years in folder like 2010, 2015 etc.
+- Inside a year, we have months
+- Inside months, we have days
+- Files will be saved in days, with the name of the files
+FILE SYSTEM HIERACHY
+	Media/
+		Audio/YYYY/2010/04/27/File
+		Video/YYYY/2010/04/27/File
+		PDFs/YYYY/2010/04/27/File
+
+Tables
+- title: varchar 355
+- filename: varchar 355 (born again -> born_again.mp3)
+- metadata: will be stored in JSON format (Text)
+- description: text
+- tags: text
+- pulication_date: Date it was preached (date)
+- upload date: date
+- file_type(mime_type): vachar 355
+
+DIFFERENT WAYS THE FILES CAN BE ACCESSED THROUGH SEARCH
+- By date
+- By name or title
+- By description
+- tags
+
+
+ADMIN
+- Super Admin (Level 1) will have access to all other admins, site settings, Billings/Subscriptions, Media uploads, users
+- Mid level Admin (Level 2) will have access to users, Media uploads, Billings/Subscriptions
+- Regular Admin (Level 3) will have access to Media uploads
+
+Admin tables
+- first_name
+- last_name
+- email
+- password
+- access_level: super, mid, regular
