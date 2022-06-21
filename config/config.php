@@ -1,13 +1,19 @@
 <?php 
 	session_start();
-	define("BURL", "http://localhost/ptdl/");
+	define("BURL", "http://localhost/pastortibi.online/");
 
 
 	define('DBHOST', 'localhost');
-	define('DBUSER', 'root');
-	define('DBPASS', '');
-	define('DBNAME', 'ptdl');
+	define('DBUSER', 'pastnllk_root');
+	define('DBPASS', 'ProsperitY100#');
+	define('DBNAME', 'pastnllk_ptdl');
 	
+
+	// define('DBHOST', 'localhost');
+	// define('DBUSER', 'root');
+	// define('DBPASS', '');
+	// define('DBNAME', 'pastortibi');
+
 	$db= new mysqli(DBHOST,DBUSER,DBPASS,DBNAME);
 	if ($db->connect_error) {
 		die("Opps!!! Database not found".$db->connect_error);

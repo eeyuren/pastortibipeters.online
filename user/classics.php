@@ -15,7 +15,7 @@
 				    <h6 class="card-title fw-bold">
 				    	<img src="asset/img/logo.png" width="50px">AFTER THE LIGHT TEACHING</h6>
 				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				    <a href="after_the_light_teaching.php" class="btn btn-primary btn-block fw-bold">After The Light Teaching</a>
+				    <a href="after_the_light_teaching" class="btn btn-primary btn-block fw-bold">After The Light Teaching</a>
 				  </div>
 				</div>
 			</div>
@@ -26,7 +26,7 @@
 				    <h6 class="card-title fw-bold">
 				    	<img src="asset/img/logo.png" width="50px">FAITH FOR FINANACES TEACHING</h6>
 				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				    <a href="faith_for_finance_teaching.php" class="btn btn-primary btn-block fw-bold">Faith for Finance Teaching</a>
+				    <a href="faith_for_finance_teaching" class="btn btn-primary btn-block fw-bold">Faith for Finance Teaching</a>
 				  </div>
 				</div>
 			</div>
@@ -37,7 +37,7 @@
 				    <h6 class="card-title fw-bold">
 				    	<img src="asset/img/logo.png" width="50px">THE POWER OF ORDER TEACHING</h6>
 				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				    <a href="power_of_order_teaching.php" class="btn btn-primary btn-block fw-bold">Power of Order Teaching</a>
+				    <a href="power_of_order_teaching" class="btn btn-primary btn-block fw-bold">Power of Order Teaching</a>
 				  </div>
 				</div>
 			</div>
@@ -51,7 +51,7 @@
 				    <h6 class="card-title fw-bold">
 				    	<img src="asset/img/logo.png" width="50px">PERSONAL ALIGNMENT TEACHING</h6>
 				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				    <a href="personal_alignment_teaching.php" class="btn btn-primary btn-block fw-bold">Personal Alignment Teaching</a>
+				    <a href="personal_alignment_teaching" class="btn btn-primary btn-block fw-bold">Personal Alignment Teaching</a>
 				  </div>
 				</div>
 			</div>
@@ -61,4 +61,4 @@
 
 
 
-<?php require_once	"footer/footer_user.php"; ?>
+<?php require_once	"footer/footer_user"; ?>

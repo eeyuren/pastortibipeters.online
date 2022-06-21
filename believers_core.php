@@ -1,3 +1,6 @@
+<?php  require_once "config/config.php"; ?>
+<?php  require_once "config/auth.php"; ?>
+<?php  require_once "config/admin_auth.php"; ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -14,7 +17,10 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
+    <!--Favicon icon-->
+    <link rel="icon" type="icon" href="assets/images/logo.png">
+    <!--Apple touch icon-->
+    <link rel="apple-touch-icon" href="assets/images/logo.png">
     <style>
 
         /* FOR DESKTOP VIEW */
@@ -126,25 +132,25 @@
 
                         <div class="col-md-10 mm">
                             <div class="main_div_core">
-                                <a href="user/believers_core.php">PRAYER</a>
+                                <a href="user/prayer_library_teaching">PRAYER</a>
                             </div>
                             <div class="main_div_core">
-                                <a href="user/believers_core.php">WORSHIP</a>
+                                <a href="user/worship_library_teaching">WORSHIP</a>
                             </div>
                             <div class="main_div_core">
-                                <a href="user/believers_core.php">DISCIPLESHIP</a>
+                                <a href="user/discipleship_library_teaching">DISCIPLESHIP</a>
                             </div>
                             <div class="main_div_core">
-                                <a href="user/believers_core.php">SERVICE</a>
+                                <a href="user/service_library_teaching">SERVICE</a>
                             </div>
                             <div class="main_div_core">
-                                <a href="user/believers_core.php">GIVING</a>
+                                <a href="user/giving_library_teaching">GIVING</a>
                             </div>
                             <div class="main_div_core">
-                                <a href="user/believers_core.php">EVANGELISM</a>
+                                <a href="user/evangelism_library_teaching">EVANGELISM</a>
                             </div>
                             <div class="main_div_core">
-                                <a href="user/believers_core.php">FELLOWSHIP</a>
+                                <a href="user/fellowship_library_teaching">FELLOWSHIP</a>
                             </div>
                         </div>
                         </div>

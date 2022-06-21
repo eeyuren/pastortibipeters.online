@@ -1,5 +1,6 @@
 <?php  require_once "config/config.php"; ?>
 <?php  require_once "config/auth.php"; ?>
+<?php  require_once "config/admin_auth.php"; ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -18,7 +19,10 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
+    <!--Favicon icon-->
+    <link rel="icon" type="icon" href="assets/images/logo.png">
+    <!--Apple touch icon-->
+    <link rel="apple-touch-icon" href="assets/images/logo.png">
     <style></style>
     
     </head>
@@ -35,23 +39,23 @@
                     <!-- Nav Bar Starts Here -->
                     <div class="col-md-2 mynav">
                         <div class="nav_main">
-                            <a href="index.php"><img class="navbar-brand logo img-fluid" src="assets/images/desktop/logo.png"></a>
+                            <a href="index"><img class="navbar-brand logo img-fluid" src="assets/images/desktop/logo.png"></a>
                         </div>
                         <?php if (isset($username)&& isset($email)): ?>
                             <div class="div_login">
-                                <a class="btn btn_login" data-toggle="collapse" href="login.php" role="button" data-target="#dashboard">
+                                <a class="btn btn_login" data-toggle="collapse" href="login" role="button" data-target="#dashboard">
                                     <?=$username ?>
                                 </a>
                             </div>
                             <div class="collapse mt-5" aria-labelledby="navbarDropdown" id="dashboard">
-                              <a class="dropdown-item" href="users/index.php"><i class="fas fa-th-large"></i> Dashboard
+                              <a class="dropdown-item" href="users/index"><i class="fas fa-th-large"></i> Dashboard
                               </a>
-                              <a class="dropdown-item" href="index.php"><i class="fas fa-ban"></i> Logout
+                              <a class="dropdown-item" href="index"><i class="fas fa-ban"></i> Logout
                               </a>
                             </div>
                         <?php else: ?>
                             <div class="div_login">
-                                <a class="btn btn_login" href="login.php" role="button">Login</a>
+                                <a class="btn btn_login" href="login" role="button">Login</a>
                             </div>
                         <?php endif ?>
                         
@@ -102,8 +106,8 @@
                                     
                                     <!-- Modal footer -->
                                     <div class="modal-footer" style="border: none;">
-                                    <a class="btn modal_footer_btn" role="button" id="md_ft_btn1" href="login.php">Login</a>
-                                    <a class="btn modal_footer_btn" role="button" id="md_ft_btn2" href="create-account.php">Create Account</a>
+                                    <a class="btn modal_footer_btn" role="button" id="md_ft_btn1" href="login">Login</a>
+                                    <a class="btn modal_footer_btn" role="button" id="md_ft_btn2" href="create-account">Create Account</a>
                                     </div>
 
                             </div>
@@ -133,7 +137,7 @@
                         </div>
 
                         <div class="main_categories">
-                        <a href="believers_core.php"><img class="img-fluid main_categories_img" src="assets/images/mobile/core.png"></a>
+                        <a href="believers_core"><img class="img-fluid main_categories_img" src="assets/images/mobile/core.png"></a>
                         <a href="#"><img class="img-fluid main_categories_img" src="assets/images/mobile/faith.png"></a>
                         <a href="#"><img class="img-fluid main_categories_img" src="assets/images/mobile/free.png"></a>
                         <a href="#"><img class="img-fluid main_categories_img" src="assets/images/mobile/classics.png"></a>

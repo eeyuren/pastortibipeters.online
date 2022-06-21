@@ -40,7 +40,11 @@
 							  <div class="card-body">
 							    <h4 class="card-title fw-bold"><?=$audio_row->filename ?></h4>
 							    <p class="card-text"><?=$audio_row->description ?></p>
-							    <a href="#" class="btn btn-primary fw-bold">SUBSCRIBE</a>
+							    <?php if ($expiration_date=="Not Active"): ?>
+							    	<a href="audio_subscription.php?media_id=<?=$audio_row->media_id ?>" class="btn btn-primary fw-bold mb-4">SUBSCRIBE</a>
+							    <?php else: ?>
+							    	<a href="video_access.php?media_id=<?=$audio_row->media_id ?>" class="btn btn-primary fw-bold mb-4">ACCESS</a>
+							    <?php endif ?>
 							  </div>
 							</div>
 						</div>
@@ -64,7 +68,11 @@
 							  <div class="card-body">
 							    <h4 class="card-title fw-bold"><?=$video_row->filename ?></h4>
 							    <p class="card-text"><?=$video_row->description ?> Hello</p>
-							    <a href="#" class="btn btn-primary fw-bold">SUBSCRIBE</a>
+							    <?php if ($expiration_date=="Not Active"): ?>
+							    	<a href="audio_subscription.php?media_id=<?=$audio_row->media_id ?>" class="btn btn-primary fw-bold mb-4">SUBSCRIBE</a>
+							    <?php else: ?>
+							    	<a href="pdf_access.php?media_id=<?=$audio_row->media_id ?>" class="btn btn-primary fw-bold mb-4">ACCESS</a>
+							    <?php endif ?>
 							  </div>
 							</div>
 						</div>
@@ -86,7 +94,7 @@
 							  <div class="card-body">
 							    <h4 class="card-title fw-bold"><?=$pdf_row->filename ?></h4>
 							    <p class="card-text"><?=$pdf_row->description ?> Hello</p>
-							    <a href="#" class="btn btn-primary fw-bold">SUBSCRIBE</a>
+							    <a href="believers_core_pdf_subscription.php?media_id=<?=$pdf_row->media_id ?>&code=<?= microtime(rand(0,2000)) ?>" class="btn btn-primary fw-bold">SUBSCRIBE</a>
 							  </div>
 							</div>
 						</div>

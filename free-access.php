@@ -1,5 +1,5 @@
-<?php  require_once "config/config.php"; ?>
-<?php  require_once "config/auth.php"; ?>
+<?php  require_once "config/config"; ?>
+<?php  require_once "config/auth"; ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -16,7 +16,10 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
+    <!--Favicon icon-->
+    <link rel="icon" type="icon" href="assets/images/logo.png">
+    <!--Apple touch icon-->
+    <link rel="apple-touch-icon" href="assets/images/logo.png">
     <style>
         /* FOR DESKTOP VIEWS */
         @media only screen and (min-width: 993px) {
@@ -108,7 +111,7 @@
                 <div class="row">
                     <div class="col-md-12 main_login">
                         <div class="div_logo">
-                            <a href="index.php"><img class="navbar-brand" id="b_logo" src="assets/images/desktop/logo.png"></a>
+                            <a href="index"><img class="navbar-brand" id="b_logo" src="assets/images/desktop/logo.png"></a>
                         </div>
 
                         <div class="col-md-2"></div>

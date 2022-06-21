@@ -1,5 +1,6 @@
 <?php  require_once "config/config.php"; ?>
 <?php  require_once "config/auth.php"; ?>
+<?php  require_once "config/admin_auth.php"; ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -17,7 +18,10 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
+    <!--Favicon icon-->
+    <link rel="icon" type="icon" href="assets/images/logo.png">
+    <!--Apple touch icon-->
+    <link rel="apple-touch-icon" href="assets/images/logo.png">
     <style>
         /* DESKTOP VIEW */
         @media only screen and (min-width: 993px) {
@@ -129,23 +133,23 @@
                 <div class="row">
                     <div class="col-md-12 main_login">
                         <div class="div_logo">
-                            <a href="index.php"><img class="navbar-brand" id="b_logo" src="assets/images/desktop/12.png"></a>
+                            <a href="index"><img class="navbar-brand" id="b_logo" src="assets/images/desktop/12.png"></a>
                         </div>
 
                         <div class="col-md-2"></div>
 
                         <div class="col-md-10 mm">
                             <div class="main_div_core">
-                            <a href="user/classics.php"><p>After the Light</p></a>
+                            <a href="user/after_the_light_teaching"><p>After the Light</p></a>
                             </div>
                             <div class="main_div_core">
-                            <a href="user/classics.php"><p>Faith for Finances</p></a>
+                            <a href="user/finances_teaching"><p>Faith for Finances</p></a>
                             </div>
                             <div class="main_div_core">
-                            <a href="user/classics.php"><p>The Power of Order</p></a>
+                            <a href="user/power_of_order_teaching"><p>The Power of Order</p></a>
                             </div>
                             <div class="main_div_core">
-                            <a href="user/classics.php"><p>Personal Alignment</p></a>
+                            <a href="user/personal_alignment_teaching"><p>Personal Alignment</p></a>
                             </div>
                             </div>
                         </div>

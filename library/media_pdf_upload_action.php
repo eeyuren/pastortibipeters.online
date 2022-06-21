@@ -34,7 +34,7 @@
 			$pdf_upload="../media/PDFs/".$_FILES['pdf_file']['name'];
 			$image="../art/pdf/".$_FILES['image']['name'];
 			move_uploaded_file($_FILES['pdf_file']['tmp_name'], $pdf_upload);
-			move_uploaded_file($_FILES['pdf_file']['tmp_name'], $image);
+			move_uploaded_file($_FILES['image']['tmp_name'], $image);
 			$db->query("INSERT INTO pdf_media(title,filename,metadata,description,tags,publication_date,upload_date,file_type,category,sub_category,file,image)VALUES('$title','$filename','$meta_data','$description','$tags','$publication_date','$upload_date','$pdf','$category','$sub_category','$pdf_upload','$image')");
 			$_SESSION['msg']="".ucwords($file_type)."the $pdf media file $filename uploaded successfully";
 			$_SESSION['color']="success";

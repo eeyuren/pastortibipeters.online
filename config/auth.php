@@ -9,9 +9,12 @@
 			$username=$row->username;
 			$email=$row->email;
 			$access=$row->access;
+			$expiration_date=$row->expiration_date;
 			$_SESSION['username']=$username;
 			$_SESSION['email']=$email;
 			$_SESSION['access']=$access;
+			$_SESSION['uid']=$id;
+			$_SESSION['expiration_date']=$expiration_date;
 		}else{
 
 		}

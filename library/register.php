@@ -38,7 +38,7 @@
 			$complete=0; $error_msg.="Email address or Username already exist<br>";
 		}
 		if ($complete==1) {
-			$message_sender="info@renaissanceassembly.org";
+			$message_sender="info@pastortibipeters.online";
 			$smsAuthToken="abcdefghtijdbjjiksj93688283";
 			$smsAuthToken=str_shuffle($smsAuthToken);
 			$smsAuthToken= substr($smsAuthToken, 0,10);
@@ -57,21 +57,13 @@
 			//=====Body of mail======
 			$mail->Body=
 			"<body>
-				<p>Your Registration confirmation code is $smsAuthToken. To login your account, or<a href='http://localhost/ptdl/login.php?email=$email&token=$smsAuthToken'>Click Here</a>
+				<p>Your Registration confirmation code is $smsAuthToken. To login your account, or<a href='https://pastortibipeters.online/login.php?email=$email&token=$smsAuthToken'>Click Here</a>
 				</p>
 			 </body>";
 			 if (!$mail->send()) {
-			 	$access="user";
-			 	$password=sha1(md5($password));
-			 	$token=microtime().rand(0,2000).$username;
-			 	$db->query("INSERT INTO users(username, email, password,access,token)VALUES('$username','$email','$password','$access','$token')");
-
-			 	$_SESSION['msg']="Your account has been successfully created.Please check your email to complete the registration process.";
-			 	$_SESSION['color']="success";
-			 	header("location:../create-account.php");
-			 	/*$_SESSION['msg']="An error occured trying to confirm your registration by sending you a mail";
+			 	$_SESSION['msg']="An error occured trying to confirm your registration by sending you a mail";
 			 	$_SESSION['color']="danger";
-			 	header("location:../create-account.php");*/
+			 	header("location:../create-account.php");
 			 }else{
 			 	$access="user";
 			 	$password=sha1(md5($password));

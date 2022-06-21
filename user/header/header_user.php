@@ -7,7 +7,7 @@
 	}else{
 		$_SESSION['msg']="Unauthorised Access. You are not permitted to access this page. Please login your account";
 		$_SESSION['color']="danger";
-		header("location:../login.php?Unauthorised Access. You are not permitted to access this page");
+		header("location:../login?Unauthorised Access. You are not permitted to access this page");
 	}
 ?>
 <!DOCTYPE html>
@@ -34,10 +34,10 @@
 	<link rel="stylesheet" type="text/css" href="asset/css/hover.min.css">
 			<!--External css styling-->
 	<link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Rubik:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet"> 
-	<!--Image favicon-->
-  <link rel="icon"  href="asset/img/logo/prime-graphics.jpg">
-  <!--Apple touch icon-->
-  <link rel="apple-touch-icon" href="asset/img/logo/prime-graphics.jpg">
+	<!--Favicon icon-->
+	<link rel="icon" type="icon" href="../assets/images/logo.png">
+	<!--Apple touch icon-->
+	<link rel="apple-touch-icon" href="../assets/images/logo.png">
 	<title>Pastor Tibi Peters Digital Library</title>
 	<style>
 		/* Sidebar toggle styling*/
@@ -62,7 +62,7 @@
 		}
 		/* Admin Sidebar*/
 		.sidebar{
-			width: 250px;
+			width: 200px;
 			height: 100%;
 			top: 33px;
 			position: fixed;
@@ -130,7 +130,7 @@
 <body class="bg-light">
 	<nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color:whitesmoke;">
 		<span class="mobile_sidebar_close fw-bold btn_close">
-			SIDEBAR-MENU
+			
 			<i class="fas fa-bars"style="font-size:25px; z-index: 1;" id="btn_close"></i>
 		</span>
 	  <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -158,7 +158,7 @@
 		          <a class="dropdown-item fw-bold" href="#">Edit Dashboard</a>
 		          <a class="dropdown-item fw-bold" href="#">Our Website</a>
 		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item fw-bold" href="../library/logout.php">Logout</a>
+		          <a class="dropdown-item fw-bold" href="../library/logout">Logout</a>
 		        </div>
 		      </li>
 		    </ul>

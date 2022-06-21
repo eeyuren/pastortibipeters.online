@@ -22,7 +22,10 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
+    <!--Favicon icon-->
+    <link rel="icon" type="icon" href="assets/images/logo.png">
+    <!--Apple touch icon-->
+    <link rel="apple-touch-icon" href="assets/images/logo.png">
     <style>
 
 
@@ -248,10 +251,12 @@
 
     .main_categories_img{
         margin: 8px;
-        padding-top: 70px;
+        /*padding-top: 70px;*/
         margin-left: 30px;
         width: 150px;
-        height: 200px;
+        /*height: 200px;*/
+        border-radius: 10px;
+        border: 2px solid #fff;
     }
 
     .links{
@@ -263,6 +268,116 @@
         width: 80px;
         height: 80px;
         margin: 20px;
+    }
+
+    .modal-content{
+        background-color: transparent;
+        border: none;
+        width: 100%px;
+        height: 500px;
+        background-image: url(assets/images/mobile/background2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-left: 30%;
+        margin-top: 80px;
+
+    }
+
+    .modal_btn{
+        text-decoration: none;
+        width: 150px;
+        background: #FFFFFF;
+        border: 1px solid #0267FF;
+        box-sizing: border-box;
+        border-radius: 24px;
+        height: auto;
+        color: #0267FF;
+        text-align: center;
+        font-weight: 400;
+        font-size: 24px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       margin-left: 35%;
+
+    }
+
+    #termly:hover{
+        text-decoration: none;
+        color: #fff;
+
+    }
+
+    .modal-p{
+        font-size: 12px;
+
+    }
+
+    #termly{
+        background-image: url(assets/images/mobile/1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 1px solid #CE8544;
+        color: #fff;
+
+    }
+
+    #yearly{
+        background-image: url(assets/images/mobile/2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 1px solid #C8C8C7;
+        color: #fff;
+    }
+
+    #yearly:hover{
+        color: #fff;
+    }
+
+    #lifetime{
+        background-image: url(assets/images/mobile/3.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 1px solid #F4BF29;
+        color: #fff;
+    }
+
+    #lifetime:hover{
+        color: #fff;
+    }
+
+    .modal_footer_btn{
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    #md_ft_btn1{
+        background-color: #fff;
+        color: #C2AF00;
+        border: 1px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 24px;
+        margin-right: 60%;
+        font-weight: bold;
+    }
+
+    #md_ft_btn2{
+        background-color: #C2AF00;
+        color: #fff;
+        border: 1px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 24px;
+        font-weight: bold;
+    }
+
+    #preloader{
+        background-image: url(assets/images/mobile/ptp.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index: 100;
     }
 
 
@@ -363,6 +478,50 @@ height: 65px;
 
     .desktop-view{
         display: none!important;
+    }
+
+    #termly:hover{
+        text-decoration: none;
+        color: #fff;
+
+    }
+
+    .modal-p{
+        font-size: 12px;
+
+    }
+
+    #termly{
+        background-image: url(assets/images/mobile/1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 1px solid #CE8544;
+        color: #fff;
+
+    }
+
+    #yearly{
+        background-image: url(assets/images/mobile/2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 1px solid #C8C8C7;
+        color: #fff;
+    }
+
+    #yearly:hover{
+        color: #fff;
+    }
+
+    #lifetime{
+        background-image: url(assets/images/mobile/3.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 1px solid #F4BF29;
+        color: #fff;
+    }
+
+    #lifetime:hover{
+        color: #fff;
     }
 
 }
@@ -481,6 +640,50 @@ display: none;
         display: none!important;
     }
 
+    #termly:hover{
+        text-decoration: none;
+        color: #fff;
+
+    }
+
+    .modal-p{
+        font-size: 12px;
+
+    }
+
+    #termly{
+        background-image: url(assets/images/mobile/1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 1px solid #CE8544;
+        color: #fff;
+
+    }
+
+    #yearly{
+        background-image: url(assets/images/mobile/2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 1px solid #C8C8C7;
+        color: #fff;
+    }
+
+    #yearly:hover{
+        color: #fff;
+    }
+
+    #lifetime{
+        background-image: url(assets/images/mobile/3.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 1px solid #F4BF29;
+        color: #fff;
+    }
+
+    #lifetime:hover{
+        color: #fff;
+    }
+
 }
 
 @media only screen and (max-width: 455px) {
@@ -563,6 +766,50 @@ height: 65px;
         display: none!important;
     }
 
+    #termly:hover{
+        text-decoration: none;
+        color: #fff;
+
+    }
+
+    .modal-p{
+        font-size: 12px;
+
+    }
+
+    #termly{
+        background-image: url(assets/images/mobile/1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 1px solid #CE8544;
+        color: #fff;
+
+    }
+
+    #yearly{
+        background-image: url(assets/images/mobile/2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 1px solid #C8C8C7;
+        color: #fff;
+    }
+
+    #yearly:hover{
+        color: #fff;
+    }
+
+    #lifetime{
+        background-image: url(assets/images/mobile/3.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 1px solid #F4BF29;
+        color: #fff;
+    }
+
+    #lifetime:hover{
+        color: #fff;
+    }
+
 }
 
     </style>
@@ -580,28 +827,28 @@ height: 65px;
                     <!-- Nav Bar Starts Here -->
                     <div class="col-md-2 mynav">
                         <div class="nav_main">
-                            <a href="index.php"><img class="navbar-brand logo" src="assets/images/desktop/logo.png"></a>
-                            <a href="index.php"><img class="navbar-brand logod" src="assets/images/desktop/logo.png"></a>
+                            <a href="index"><img class="navbar-brand logo" src="assets/images/desktop/logo.png"></a>
+                            <a href="index"><img class="navbar-brand logod" src="assets/images/desktop/logo.png"></a>
                         </div>
                         <?php if (isset($_SESSION['username'])&& isset($_SESSION['email'])): ?>
                             <div class="div_login">
-                                <a class="btn btn_login" style="box-sizing: border-box;" data-toggle="collapse" href="login.php" role="button" data-target="#dashboard">
+                                <a class="btn btn_login" style="box-sizing: border-box;" data-toggle="collapse" href="login" role="button" data-target="#dashboard">
                                     <?=$_SESSION['username'] ?>
                                 </a>
                             </div>
                             <div class="collapse mt-5" aria-labelledby="navbarDropdown" id="dashboard">
                                 <?php if (isset($_SESSION['access_level'])&& isset($_SESSION['status'])): ?>
-                                    <a class="dropdown-item" href="admin/index.php" style="font-size: 12px; right: 25px; position: relative; text-align: right;"><i class="fas fa-th-large"></i> Dashboard
+                                    <a class="dropdown-item" href="admin/index" style="font-size: 12px; right: 25px; position: relative; text-align: right;"><i class="fas fa-th-large"></i> Dashboard
                                     </a>
                                   <?php else: ?>
 
                                 <?php endif ?>
-                              <a class="dropdown-item" style="font-size: 12px; right: 25px; position: relative; text-align: right;" href="library/logout.php"><i class="fas fa-ban"></i> Logout
+                              <a class="dropdown-item" style="font-size: 12px; right: 25px; position: relative; text-align: right;" href="library/logout"><i class="fas fa-ban"></i> Logout
                               </a>
                             </div>
                         <?php else: ?>
                             <div class="div_login">
-                                <a class="btn btn_login" href="login.php" role="button">Login</a>
+                                <a class="btn btn_login" href="login" role="button">Login</a>
                             </div>
                         <?php endif ?>
                         
@@ -637,23 +884,23 @@ height: 65px;
                                     
                                     <!-- Modal body -->
                                     <div class="modal-body" style="border: none;">
-                                    <a class="btn modal_btn" href="#" role="button" id="termly">Termly</a><br>
-                                    <p class="text-center modal-p">Gives you a 90 day access <br>
-                                    to all categories and 3 New Releases</p>
+                                    <a class="btn modal_btn" href="#" role="button" id="termly">BRONZE</a><br>
+                                    <p class="text-center modal-p">90 days access (Audio + Video + PDF) <br>
+                                    Including NEW RELEASES</p>
 
-                                    <a class="btn modal_btn" href="#" role="button" id="yearly">Yearly</a><br>
-                                    <p class="text-center modal-p">Gives you a 365 day access <br>
-                                    to all categories and 12 New Releases</p>
+                                    <a class="btn modal_btn" href="#" role="button" id="yearly">SILVER</a><br>
+                                    <p class="text-center modal-p">180 days access (Audio + Video + PDF) <br>
+                                    Including NEW RELEASES</p>
 
-                                    <a class="btn modal_btn" href="#" role="button" id="lifetime">Lifetime</a><br>
-                                    <p class="text-center modal-p">Gives you a lifetime access <br>
-                                    to all categories and all New Releases</p>
+                                    <a class="btn modal_btn" href="#" role="button" id="lifetime">GOLD</a><br>
+                                    <p class="text-center modal-p">365 days access (Audio + Video + PDF) <br>
+                                    Including NEW RELEASES</p>
                                     </div>
                                     
                                     <!-- Modal footer -->
                                     <div class="modal-footer" style="border: none;">
-                                    <a class="btn modal_footer_btn" role="button" id="md_ft_btn1" href="login.php">Login</a>
-                                    <a class="btn modal_footer_btn" role="button" id="md_ft_btn2" href="create-account.php">Create Account</a>
+                                    <a class="btn modal_footer_btn" role="button" id="md_ft_btn1" href="login">Login</a>
+                                    <a class="btn modal_footer_btn" role="button" id="md_ft_btn2" href="create-account">Create Account</a>
                                     </div>
 
                             </div>
@@ -683,10 +930,10 @@ height: 65px;
                         </div>
 
                         <div class="main_categories">
-                        <a href="believers_core.php"><img class="img-fluid main_categories_img" src="assets/images/mobile/core.png"></a>
-                        <a href="faith-food.php"><img class="img-fluid main_categories_img" src="assets/images/mobile/faith.png"></a>
-                        <a href="free-access.php"><img class="img-fluid main_categories_img" src="assets/images/mobile/free.png"></a>
-                        <a href="classics.php"><img class="img-fluid main_categories_img" src="assets/images/mobile/classics.png"></a>
+                        <a href="believers_core"><img class="img-fluid main_categories_img" src="assets/images/mobile/core.png"></a>
+                        <a href="faith-food"><img class="img-fluid main_categories_img" src="assets/images/mobile/faith.png"></a>
+                        <a href="free-access"><img class="img-fluid main_categories_img" src="assets/images/mobile/free.png"></a>
+                        <a href="classics"><img class="img-fluid main_categories_img" src="assets/images/mobile/classics.png"></a>
                         </div>
 
                         <div class="links">
@@ -708,27 +955,27 @@ height: 65px;
                     <!-- Nav Bar Starts Here -->
                     <div class="col-md-2 mynav">
                         <div class="nav_main">
-                            <a href="index.php"><img class="navbar-brand logod" src="assets/images/desktop/logo.png"></a>
+                            <a href="index"><img class="navbar-brand logod" src="assets/images/desktop/logo.png"></a>
                         </div>
                         <?php if (isset($_SESSION['username'])&& isset($_SESSION['email'])): ?>
                             <div class="div_login">
-                                <a class="btn btn_login" style="box-sizing: border-box;" data-toggle="collapse" href="login.php" role="button" data-target="#dashboard">
+                                <a class="btn btn_login" style="box-sizing: border-box;" data-toggle="collapse" href="login" role="button" data-target="#dashboard">
                                     <?=$_SESSION['username'] ?>
                                 </a>
                             </div>
                             <div class="collapse mt-5" aria-labelledby="navbarDropdown" id="dashboard">
                                 <?php if (isset($_SESSION['access_level'])&& isset($_SESSION['status'])): ?>
-                                    <a class="dropdown-item" href="admin/index.php" style="font-size: 12px; right: 25px; position: relative; text-align: right;"><i class="fas fa-th-large"></i> Dashboard
+                                    <a class="dropdown-item" href="admin/index" style="font-size: 12px; right: 25px; position: relative; text-align: right;"><i class="fas fa-th-large"></i> Dashboard
                                     </a>
                                   <?php else: ?>
 
                                 <?php endif ?>
-                              <a class="dropdown-item" style="font-size: 12px; right: 25px; position: relative; text-align: right;" href="library/logout.php"><i class="fas fa-ban"></i> Logout
+                              <a class="dropdown-item" style="font-size: 12px; right: 25px; position: relative; text-align: right;" href="library/logout"><i class="fas fa-ban"></i> Logout
                               </a>
                             </div>
                         <?php else: ?>
                             <div class="div_login">
-                                <a class="btn btn_login" href="login.php" role="button">Login</a>
+                                <a class="btn btn_login" href="login" role="button">Login</a>
                             </div>
                         <?php endif ?>
                         
@@ -748,11 +995,11 @@ height: 65px;
                     <div class="col-md-10 main">
 
                     <div class="div_subscribe">
-                            <a class="btn btn_subscribe" href="#" role="button" data-toggle="modal" data-target="#myModal">Subscribe</a>
+                            <a class="btn btn_subscribe" href="#" role="button" data-toggle="modal" data-target="#myModald">Subscribe</a>
                             <span class="material-icons sb_srch">search</span>
 
-                            <div class="modal fade" id="myModal">
-                            <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal fade" id="myModald">
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
                             <div class="modal-content">
                             
                                     <!-- Modal Header -->
@@ -763,23 +1010,23 @@ height: 65px;
                                     
                                     <!-- Modal body -->
                                     <div class="modal-body" style="border: none;">
-                                    <a class="btn modal_btn" href="#" role="button" id="termly">Termly</a><br>
-                                    <p class="text-center modal-p">Gives you a 90 day access <br>
-                                    to all categories and 3 New Releases</p>
+                                    <a class="btn modal_btn" href="#" role="button" id="termly">BRONZE</a><br>
+                                    <p class="text-center modal-p">90 days access (Audio + Video + PDF) <br>
+                                    Including NEW RELEASES</p>
 
-                                    <a class="btn modal_btn" href="#" role="button" id="yearly">Yearly</a><br>
-                                    <p class="text-center modal-p">Gives you a 365 day access <br>
-                                    to all categories and 12 New Releases</p>
+                                    <a class="btn modal_btn" href="#" role="button" id="yearly">SILVER</a><br>
+                                    <p class="text-center modal-p">180 days access (Audio + Video + PDF) <br>
+                                    Including NEW RELEASES</p>
 
-                                    <a class="btn modal_btn" href="#" role="button" id="lifetime">Lifetime</a><br>
-                                    <p class="text-center modal-p">Gives you a lifetime access <br>
-                                    to all categories and all New Releases</p>
+                                    <a class="btn modal_btn" href="#" role="button" id="lifetime">GOLD</a><br>
+                                    <p class="text-center modal-p">365 days access (Audio + Video + PDF) <br>
+                                    Including NEW RELEASES</p>
                                     </div>
                                     
                                     <!-- Modal footer -->
                                     <div class="modal-footer" style="border: none;">
-                                    <a class="btn modal_footer_btn" role="button" id="md_ft_btn1" href="login.php">Login</a>
-                                    <a class="btn modal_footer_btn" role="button" id="md_ft_btn2" href="create-account.php">Create Account</a>
+                                    <a class="btn modal_footer_btn" role="button" id="md_ft_btn1" href="login">Login</a>
+                                    <a class="btn modal_footer_btn" role="button" id="md_ft_btn2" href="create-account">Create Account</a>
                                     </div>
 
                             </div>
@@ -813,10 +1060,10 @@ height: 65px;
                         </div>
 
                         <div class="main_categories">
-                        <a href="believers_core.php"><img class="img-fluid main_categories_img" src="assets/images/desktop/believerscoreicon.png"></a>
-                        <a href="faith-food.php"><img class="img-fluid main_categories_img" src="assets/images/desktop/faithfoodicon.png"></a>
-                        <a href="free-access.php"><img class="img-fluid main_categories_img" src="assets/images/desktop/freeicon.png"></a>
-                        <a href="classics.php"><img class="img-fluid main_categories_img" src="assets/images/desktop/classicsicon.png"></a>
+                        <a href="believers_core"><img class="img-fluid main_categories_img" src="assets/images/desktop/believerscoreicon.png"></a>
+                        <a href="faith-food"><img class="img-fluid main_categories_img" src="assets/images/desktop/faithfoodicon.png"></a>
+                        <a href="free-access"><img class="img-fluid main_categories_img" src="assets/images/desktop/freeicon.png"></a>
+                        <a href="classics"><img class="img-fluid main_categories_img" src="assets/images/desktop/classicsicon.png"></a>
                         </div>
 
                         <div class="links">

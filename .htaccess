@@ -1,0 +1,8 @@
+#Removing file extensions from URL
+RewriteEngine on
+RewriteCond %{RERQUEST_FILENAME} !-d
+RewriteCond %{RERQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+
+

@@ -18,12 +18,15 @@
 		</div>
 		<div class="row float-right">
 			<div class="col-md-12">
-				<button class="btn btn-success btn-sm fw-bold text-dark" id="audio_messages">
-					<i class="fas fa-file-audio mr-1"></i>AUDIO MESSAGES</button>
-				<button class="btn btn-success btn-sm fw-bold text-dark" id="video_messages">
-					<i class="fas fa-file-video mr-1"></i>VIDEO MESSAGES</button>
-				<button class="btn btn-success btn-sm fw-bold text-dark"id="pdf_messages">
-					<i class="fas fa-file-pdf mr-1"></i>PDF MESSAGES</button>
+				<button class="btn btn-success btn-sm fw-bold text-dark" onclick="audioUpload()">
+					<i class="fas fa-file-audio mr-1"></i>AUDIO MESSAGES
+				</button>
+				<button class="btn btn-success btn-sm fw-bold text-dark" onclick="videoUpload()">
+					<i class="fas fa-file-video mr-1"></i>VIDEO MESSAGES
+				</button>
+				<button class="btn btn-success btn-sm fw-bold text-dark" onclick="pdfUpload()">
+					<i class="fas fa-file-pdf mr-1"></i>PDF MESSAGES
+				</button>
 			</div>
 		</div>
 	</div>
@@ -40,7 +43,11 @@
 							  <div class="card-body">
 							    <h4 class="card-title fw-bold"><?=$audio_row->filename ?></h4>
 							    <p class="card-text"><?=$audio_row->description ?></p>
-							    <a href="#" class="btn btn-primary fw-bold">SUBSCRIBE</a>
+							    <?php if ($expiration_date=="Not Active"): ?>
+							    	<a href="audio_subscription.php?media_id=<?=$audio_row->media_id ?>" class="btn btn-primary fw-bold mb-4">SUBSCRIBE</a>
+							    <?php else: ?>
+							    	<a href="audio_access.php?media_id=<?=$audio_row->media_id ?>" class="btn btn-primary fw-bold mb-4">ACCESS</a>
+							    <?php endif ?>
 							  </div>
 							</div>
 						</div>
@@ -64,7 +71,11 @@
 							  <div class="card-body">
 							    <h4 class="card-title fw-bold"><?=$video_row->filename ?></h4>
 							    <p class="card-text"><?=$video_row->description ?> Hello</p>
-							    <a href="#" class="btn btn-primary fw-bold">SUBSCRIBE</a>
+							    <?php if ($expiration_date=="Not Active"): ?>
+							    	<a href="audio_subscription.php?media_id=<?=$audio_row->media_id ?>" class="btn btn-primary fw-bold mb-4">SUBSCRIBE</a>
+							    <?php else: ?>
+							    	<a href="video_access.php?media_id=<?=$video_row->media_id ?>" class="btn btn-primary fw-bold mb-4">ACCESS</a>
+							    <?php endif ?>
 							  </div>
 							</div>
 						</div>
@@ -82,11 +93,15 @@
 					<?php if ($pdf_row->category=="believers core" && $pdf_row->sub_category=="worship"): ?>	
 						<div class="col-md-4">
 							<div class="card" style="width: 20rem; height:100%">
-							  <img class="card-img-top" src="<?=$pdf_row->file ?>" alt="Card image cap">
+							  <img class="card-img-top" src="<?=$pdf_row->image ?>" alt="Card image cap">
 							  <div class="card-body">
 							    <h4 class="card-title fw-bold"><?=$pdf_row->filename ?></h4>
 							    <p class="card-text"><?=$pdf_row->description ?> Hello</p>
-							    <a href="#" class="btn btn-primary fw-bold">SUBSCRIBE</a>
+							    <?php if ($expiration_date=="Not Active"): ?>
+							    	<a href="audio_subscription.php?media_id=<?=$audio_row->media_id ?>" class="btn btn-primary fw-bold mb-4">SUBSCRIBE</a>
+							    <?php else: ?>
+							    	<a href="pdf_access.php?media_id=<?=$pdf_row->media_id ?>" class="btn btn-primary fw-bold mb-4">ACCESS</a>
+							    <?php endif ?>
 							  </div>
 							</div>
 						</div>
@@ -103,7 +118,6 @@
 	//audio click event to show messgaes that are only audio
 	document.getElementById("video_showcase").style.display="none";
 	document.getElementById("pdf_showcase").style.display="none";
-	document.getElementById("audio_messages").addEventListener("click",audioUpload);
 	function audioUpload(){
 		document.getElementById("audio_showcase").style.display="block";
 		document.getElementById("video_showcase").style.display="none";
@@ -111,7 +125,6 @@
 	}
 
 	//video click event to show messgaes that are only video
-	document.getElementById("video_messages").addEventListener("click",videoUpload);
 	function videoUpload(){
 		document.getElementById("video_showcase").style.display="block";
 		document.getElementById("audio_showcase").style.display="none";
@@ -119,11 +132,10 @@
 	}
 
 	//pdf click event to show messgaes that are only pdf
-	document.getElementById("pdf_messages").addEventListener("click",videoUpload);
-	function videoUpload(){
+	function pdfUpload(){
+		document.getElementById("pdf_showcase").style.display="block";
 		document.getElementById("video_showcase").style.display="none";
 		document.getElementById("audio_showcase").style.display="none";
-		document.getElementById("pdf_showcase").style.display="block";
 	}
 </script>
 <?php require_once	"footer/footer_user.php"; ?>

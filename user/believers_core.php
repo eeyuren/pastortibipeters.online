@@ -15,7 +15,7 @@
 				    <h6 class="card-title fw-bold">
 				    	<img src="asset/img/logo.png" width="50px">TEACHINGS ON PRAYER</h6>
 				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				    <a href="prayer_library_teaching.php" class="btn btn-primary btn-block fw-bold">Prayer Library Access</a>
+				    <a href="prayer_library_teaching" class="btn btn-primary btn-block fw-bold">Prayer Library Access</a>
 				  </div>
 				</div>
 			</div>
@@ -26,7 +26,7 @@
 				    <h6 class="card-title fw-bold">
 				    	<img src="asset/img/logo.png" width="50px">TEACHINGS ON WORSHIP</h6>
 				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				    <a href="worship_library_teaching.php" class="btn btn-primary btn-block fw-bold">Worship Library Access</a>
+				    <a href="worship_library_teaching" class="btn btn-primary btn-block fw-bold">Worship Library Access</a>
 				  </div>
 				</div>
 			</div>
@@ -37,7 +37,7 @@
 				    <h6 class="card-title fw-bold">
 				    	<img src="asset/img/logo.png" width="50px">TEACHING ON DISCIPLESHIP</h6>
 				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				    <a href="discipleship_library_teaching.php" class="btn btn-primary btn-block fw-bold">Discipleship Library Access</a>
+				    <a href="discipleship_library_teaching" class="btn btn-primary btn-block fw-bold">Discipleship Library Access</a>
 				  </div>
 				</div>
 			</div>
@@ -51,7 +51,7 @@
 				    <h6 class="card-title fw-bold">
 				    	<img src="asset/img/logo.png" width="50px">TEACHINGS ON SERVICE</h6>
 				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				    <a href="service_library_teaching.php" class="btn btn-primary btn-block fw-bold">Service Library Access</a>
+				    <a href="service_library_teaching" class="btn btn-primary btn-block fw-bold">Service Library Access</a>
 				  </div>
 				</div>
 			</div>
@@ -62,7 +62,7 @@
 				    <h6 class="card-title fw-bold">
 				    	<img src="asset/img/logo.png" width="50px">TEACHINGS ON GIVING</h6>
 				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				    <a href="giving_library_teaching.php" class="btn btn-primary btn-block fw-bold">Giving Library Access</a>
+				    <a href="giving_library_teaching" class="btn btn-primary btn-block fw-bold">Giving Library Access</a>
 				  </div>
 				</div>
 			</div>
@@ -73,7 +73,7 @@
 				    <h6 class="card-title fw-bold">
 				    	<img src="asset/img/logo.png" width="50px">TEACHING ON EVANGELISM</h6>
 				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				    <a href="evangelism_library_teaching.php" class="btn btn-primary btn-block fw-bold">Evangelism Library Access</a>
+				    <a href="evangelism_library_teaching" class="btn btn-primary btn-block fw-bold">Evangelism Library Access</a>
 				  </div>
 				</div>
 			</div>
@@ -83,4 +83,4 @@
 
 
 
-<?php require_once	"footer/footer_user.php"; ?>
+<?php require_once	"footer/footer_user"; ?>

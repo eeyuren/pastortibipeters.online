@@ -40,7 +40,11 @@
 							  <div class="card-body">
 							    <h4 class="card-title fw-bold"><?=$audio_row->filename ?></h4>
 							    <p class="card-text"><?=$audio_row->description ?></p>
-							    <a href="#" class="btn btn-primary fw-bold">SUBSCRIBE</a>
+							    <?php if ($expiration_date=="Not Active"): ?>
+							    	<a href="audio_subscription?media_id=<?=$audio_row->media_id ?>" class="btn btn-primary fw-bold mb-4">SUBSCRIBE</a>
+							    <?php else: ?>
+							    	<a href="audio_access?media_id=<?=$audio_row->media_id ?>" class="btn btn-primary fw-bold mb-4">ACCESS</a>
+							    <?php endif ?>
 							  </div>
 							</div>
 						</div>
@@ -64,7 +68,7 @@
 							  <div class="card-body">
 							    <h4 class="card-title fw-bold"><?=$video_row->filename ?></h4>
 							    <p class="card-text"><?=$video_row->description ?> Hello</p>
-							    <a href="#" class="btn btn-primary fw-bold">SUBSCRIBE</a>
+							    <a href="believers_core_video_subscription?media_id=<?=$video_row->media_id ?>&code=<?= microtime(rand(0,2000)) ?>" class="btn btn-primary fw-bold mb-4">SUBSCRIBE</a>
 							  </div>
 							</div>
 						</div>
@@ -75,7 +79,7 @@
 		</div>
 	</div>
 	<!--pdf display files-->
-	<div class="container-fluid mt-5" id="pdf_showcase">
+	<!-- <div class="container-fluid mt-5" id="pdf_showcase">
 		<div class="row">
 			<?php if ($pdf->num_rows>0): ?>
 				<?php while($pdf_row=$pdf->fetch_object()): ?>
@@ -86,7 +90,7 @@
 							  <div class="card-body">
 							    <h4 class="card-title fw-bold"><?=$pdf_row->filename ?></h4>
 							    <p class="card-text"><?=$pdf_row->description ?> Hello</p>
-							    <a href="#" class="btn btn-primary fw-bold">SUBSCRIBE</a>
+							    <a href="believers_core_pdf_subscription?media_id=<?=$pdf_row->media_id ?>&code=<?= microtime(rand(0,2000)) ?>" class="btn btn-primary fw-bold mb-4">SUBSCRIBE</a>
 							  </div>
 							</div>
 						</div>
@@ -95,7 +99,7 @@
 				<?php endwhile; ?>
 			<?php endif; ?>
 		</div>
-	</div>
+	</div> -->
 </main>
 
 
@@ -126,4 +130,4 @@
 		document.getElementById("pdf_showcase").style.display="block";
 	}
 </script>
-<?php require_once	"footer/footer_user.php"; ?>
+<?php require_once	"footer/footer_user"; ?>

@@ -1,5 +1,6 @@
 <?php  require_once "config/config.php"; ?>
 <?php  require_once "config/auth.php"; ?>
+<?php  require_once "config/admin_auth.php"; ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -17,7 +18,10 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
+    <!--Favicon icon-->
+    <link rel="icon" type="icon" href="assets/images/logo.png">
+    <!--Apple touch icon-->
+    <link rel="apple-touch-icon" href="assets/images/logo.png">
     <style>
         /* FOR DESKTOP VIEWS */
         @media only screen and (min-width: 993px) {
@@ -130,26 +134,26 @@
                 <div class="row">
                     <div class="col-md-12 main_login">
                         <div class="div_logo">
-                            <a href="index.php"><img class="navbar-brand" id="b_logo" src="assets/images/desktop/12.png"></a>
+                            <a href="index"><img class="navbar-brand" id="b_logo" src="assets/images/desktop/12.png"></a>
                         </div>
 
                         <div class="col-md-2"></div>
 
                         <div class="col-md-10 mm">
                             <div class="main_div_core">
-                                <a href="user/faith-food.php"><p>SALVATION</p></a>
+                                <a href="user/salvation_library_teaching"><p>SALVATION</p></a>
                             </div>
                             <div class="main_div_core">
-                            <a href="user/faith-food.php"><p>HOLY SPIRIT</p></a>
+                            <a href="user/holy_spirit_teaching"><p>HOLY SPIRIT</p></a>
                             </div>
                             <div class="main_div_core">
-                            <a href="user/faith-food.php"><p>HEALING</p></a>
+                            <a href="user/healing_teaching_access"><p>HEALING</p></a>
                             </div>
                             <div class="main_div_core">
-                            <a href="user/faith-food.php"><p>FINANCES</p></a>
+                            <a href="user/finances_teaching"><p>FINANCES</p></a>
                             </div>
                             <div class="main_div_core">
-                            <a href="user/faith-food.php"><p>LIVING</p></a>
+                            <a href="user/living_teaching"><p>LIVING</p></a>
                             </div>
                         </div>
                         </div>

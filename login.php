@@ -1,4 +1,4 @@
-<?php  require_once "config/config.php"; ?>
+<?php  require_once "config/config"; ?>
 <?php    
    /* if (isset($_GET['email'])&& isset($_GET['token'])) {
         $email=$_GET['email'];
@@ -7,12 +7,12 @@
         }else{
             $_SESSION['msg']="Invalid token verification number.";
             $_SESSION['color']="danger";
-            header("location:create-account.php");
+            header("location:create-account");
         }
     }else{
         $_SESSION['msg']="Access to the page is not granted. Please Register your account and get confirmation from your email address.";
         $_SESSION['color']="danger";
-        header("location:create-account.php");
+        header("location:create-account");
     }*/
 
 ?>
@@ -32,7 +32,10 @@
 
     <!-- Swiper js -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-
+    <!--Favicon icon-->
+    <link rel="icon" type="icon" href="assets/images/logo.png">
+    <!--Apple touch icon-->
+    <link rel="apple-touch-icon" href="assets/images/logo.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <style>
@@ -224,8 +227,8 @@
                         </div>
 
                         <div class="col-md-8 myform">
-                            <?php require_once  "error_msg.php"; ?>
-                            <form action="library/login.php"method="POST"enctype="multipart/form-data">
+                            <?php require_once  "error_msg"; ?>
+                            <form action="library/login"method="POST"enctype="multipart/form-data">
                                 <div class="form-group">
                                 <label for="username">USERNAME</label>
                                 <input type="text" class="form-control" id="username" name="username" required>
@@ -238,7 +241,7 @@
                                <input type="submit" class="sub_btn"name="login" value="Submit"><br><br>
                                 <div class="form-group form-check form-inline">
                                     <p>Don't have an account?</p>
-                                    <a href="create-account.php" class="btn btn_a">Create an Account</a>
+                                    <a href="create-account" class="btn btn_a">Create an Account</a>
                                 </div>
                                 
                             </form>

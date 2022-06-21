@@ -4,6 +4,7 @@
 	$audio=$db->query("SELECT * FROM audio_media");
 	$video=$db->query("SELECT * FROM video_media");
 	$pdf=$db->query("SELECT * FROM pdf_media");
+	$expiration_date=$_SESSION["expiration_date"]
 ?>
 <main class="main_content">
 	<div class="container">
@@ -33,14 +34,18 @@
 			<?php if ($audio->num_rows>0): ?>
 				<?php while($audio_row=$audio->fetch_object()): ?>
 					<?php if ($audio_row->category=="believers core" && $audio_row->sub_category=="prayer"): ?>
-						
+						<?php $_SESSION['media_id']=$audio_row->media_id ?>
 						<div class="col-md-4">
 							<div class="card" style="width: 20rem; height:100%">
 							  <img class="card-img-top" src="<?=$audio_row->image ?>" alt="Card image cap">
 							  <div class="card-body">
 							    <h4 class="card-title fw-bold"><?=$audio_row->filename ?></h4>
 							    <p class="card-text"><?=$audio_row->description ?></p>
-							    <a href="#" class="btn btn-primary fw-bold">SUBSCRIBE</a>
+							    <?php if ($expiration_date=="Not Active"): ?>
+							    	<a href="audio_subscription.php?media_id=<?=$audio_row->media_id ?>" class="btn btn-primary fw-bold mb-4">SUBSCRIBE</a>
+							    <?php else: ?>
+							    	<a href="audio_access.php?media_id=<?=$audio_row->media_id ?>" class="btn btn-primary fw-bold mb-4">ACCESS</a>
+							    <?php endif ?>
 							  </div>
 							</div>
 						</div>
@@ -63,8 +68,12 @@
 							  <img class="card-img-top" src="<?=$video_row->image ?>" alt="Card image cap">
 							  <div class="card-body">
 							    <h4 class="card-title fw-bold"><?=$video_row->filename ?></h4>
-							    <p class="card-text"><?=$video_row->description ?> Hello</p>
-							    <a href="#" class="btn btn-primary fw-bold">SUBSCRIBE</a>
+							    <p class="card-text"><?=$video_row->description ?> </p>
+							    <?php if ($expiration_date=="Not Active"): ?>
+							    	<a href="audio_subscription.php?media_id=<?=$video_row->media_id ?>" class="btn btn-primary fw-bold mb-4">SUBSCRIBE</a>
+							    <?php else: ?>
+							    	<a href="video_access.php?media_id=<?=$video_row->media_id ?>" class="btn btn-primary fw-bold mb-4">ACCESS</a>
+							    <?php endif ?>
 							  </div>
 							</div>
 						</div>
@@ -85,8 +94,12 @@
 							  <img class="card-img-top" src="<?=$pdf_row->file ?>" alt="Card image cap">
 							  <div class="card-body">
 							    <h4 class="card-title fw-bold"><?=$pdf_row->filename ?></h4>
-							    <p class="card-text"><?=$pdf_row->description ?> Hello</p>
-							    <a href="#" class="btn btn-primary fw-bold">SUBSCRIBE</a>
+							    <p class="card-text"><?=$pdf_row->description ?> </p>
+							    <?php if ($expiration_date=="Not Active"): ?>
+							    	<a href="audio_subscription.php?media_id=<?=$pdf_row->media_id ?>" class="btn btn-primary fw-bold mb-4">SUBSCRIBE</a>
+							    <?php else: ?>
+							    	<a href="pdf_access.php?media_id=<?=$pdf_row->media_id ?>" class="btn btn-primary fw-bold mb-4">ACCESS</a>
+							    <?php endif ?>
 							  </div>
 							</div>
 						</div>
@@ -119,11 +132,12 @@
 	}
 
 	//pdf click event to show messgaes that are only pdf
-	document.getElementById("pdf_messages").addEventListener("click",videoUpload);
+	document.getElementById("pdf_messages").addEventListener("click",pdfUpload);
 	function videoUpload(){
+		
+		document.getElementById("pdf_showcase").style.display="block";
 		document.getElementById("video_showcase").style.display="none";
 		document.getElementById("audio_showcase").style.display="none";
-		document.getElementById("pdf_showcase").style.display="block";
 	}
 </script>
 <?php require_once	"footer/footer_user.php"; ?>

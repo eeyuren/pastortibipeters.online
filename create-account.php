@@ -1,4 +1,4 @@
-<?php  require_once "config/config.php"; ?>
+<?php  require_once "config/config"; ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -17,7 +17,10 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
+    <!--Favicon icon-->
+    <link rel="icon" type="icon" href="assets/images/logo.png">
+    <!--Apple touch icon-->
+    <link rel="apple-touch-icon" href="assets/images/logo.png">
     <style>
         /* FRO DESKTOP VIEW ONLY */
 
@@ -181,8 +184,8 @@
                         </div>
 
                         <div class="col-md-8 myform">
-                            <?php require_once  "error_msg.php"; ?>
-                            <form action="library/register.php" method="POST" enctype="multipart/form-data">
+                            <?php require_once  "error_msg"; ?>
+                            <form action="library/register" method="POST" enctype="multipart/form-data">
                                 <div class="form-group">
                                 <label for="username">USERNAME</label>
                                 <input type="text" class="form-control" id="username" name="username" required>
@@ -196,7 +199,7 @@
                                 <input type="password" class="form-control" id="pwd" name="password">
                                 </div>
                                 <div class="form-group">
-                                <label for="conf_pwd">PASSWORD</label>
+                                <label for="conf_pwd">CONFIRM PASSWORD</label>
                                 <input type="password" class="form-control" id="pwd" name="confirm_password">
                                 </div>
                                 <input type="submit" class="btn" value="Create an Account" name="create_account"><br><br>

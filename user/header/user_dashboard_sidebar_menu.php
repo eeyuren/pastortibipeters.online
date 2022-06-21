@@ -4,7 +4,7 @@
 			<!--Admin Panel-->
 				<div style="border-bottom: 1px solid white;" class="pb-2 mt-3">
 					<p style="font-weight:bolder;" class="">
-						<img src="asset/img/profile.jpg"class="rounded-circle mr-2"height="50"width="50"> <span>USERS DASHBOARD</span>
+						<!--<img src="asset/img/profile.jpg"class="rounded-circle mr-2"height="50"width="50">--> <span>USERS DASHBOARD</span>
 					</p>
 				</div>
 			<!--!Admin Panel-->

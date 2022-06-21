@@ -10,7 +10,7 @@
 <main class="main_content">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 mt-5">
+            <div class="col-md-12 ">
                 <div class="float-right">
                     <a href="media_upload.php" class="btn btn-success fw-bold btn-sm mt-2">
                         <i class="fas fa-file-audio"></i> Upload Audio File
